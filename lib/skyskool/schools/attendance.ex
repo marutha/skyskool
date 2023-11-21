@@ -4,7 +4,7 @@ defmodule Skyskool.Schools.Attendance do
 
   schema "attendance" do
     field :attendance_date, :date
-    field :attendance_type, :string
+    field :attendance_type, Ecto.Enum, values: ~w(fullday forenoon afternoon)a
 
     belongs_to :student, Skyskool.Schools.Student
     timestamps()
