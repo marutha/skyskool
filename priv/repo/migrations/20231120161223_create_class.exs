@@ -5,7 +5,7 @@ defmodule Skyskool.Repo.Migrations.CreateClass do
     create table(:class) do
       add :grade, :string
       add :section, :string
-
+      add :school_id, references(:schools, on_delete: :nothing)
       timestamps()
     end
 

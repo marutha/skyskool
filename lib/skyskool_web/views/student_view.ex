@@ -12,6 +12,7 @@ defmodule SkyskoolWeb.StudentView do
 
   def render("student.json", %{student: student}) do
     %{id: student.id,
+      class_id: student.class_id,
       name: student.name,
       dob: student.dob,
       email: student.email}

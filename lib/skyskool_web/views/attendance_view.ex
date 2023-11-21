@@ -12,6 +12,7 @@ defmodule SkyskoolWeb.AttendanceView do
 
   def render("attendance.json", %{attendance: attendance}) do
     %{id: attendance.id,
+      student_id: attendance.student_id,
       attendance_date: attendance.attendance_date,
       attendance_type: attendance.attendance_type}
   end

@@ -12,6 +12,7 @@ defmodule SkyskoolWeb.ClassView do
 
   def render("class.json", %{class: class}) do
     %{id: class.id,
+      school_id: class.school_id,
       grade: class.grade,
       section: class.section}
   end

@@ -13,7 +13,7 @@ defmodule Skyskool.Schools.Attendance do
   @doc false
   def changeset(attendance, attrs) do
     attendance
-    |> cast(attrs, [:attendance_date, :attendance_type])
-    |> validate_required([:attendance_date, :attendance_type])
+    |> cast(attrs, [:attendance_date, :attendance_type, :student_id])
+    |> validate_required([:attendance_date, :attendance_type, :student_id])
   end
 end

@@ -16,7 +16,7 @@ defmodule Skyskool.Schools.Student do
   @doc false
   def changeset(student, attrs) do
     student
-    |> cast(attrs, [:name, :dob, :email])
-    |> validate_required([:name, :dob, :email])
+    |> cast(attrs, [:name, :dob, :email, :class_id])
+    |> validate_required([:name, :dob, :email, :class_id])
   end
 end
